@@ -40,7 +40,7 @@ Program executes in these steps:
 
 <br />
 
-### _Ad Revenue (Needs Debugging)_
+### _Ad Revenue (Completed)_
 
 A website has to choose between an N number of advertisements available, based on the advertisements starting times, durations and revenue they will bring as input. Based on the starting time and duration, some might ads overlap.
 
@@ -54,7 +54,7 @@ Once j reaches the final step, we will have the maximum revenue we need.
 
 <br />
 
-### _Flight Graph Problem (Incomplete)_
+### _Flight Graph Problem (Half solved)_
 
 A company that sells plane tickets wants to develop an efficient algorithm to show their users available paths between the cities they wish to fly between. This company gives available flights information, in the shape of a txt file that contains source city, destination city, duration as hour, duraiton as minute, and price of the flight, in that order.
 Users that wish to see flights available must:
@@ -74,7 +74,7 @@ This is how the program executes:
 
 <br />
 
-### _Hashing Program (Incomplete)_
+### _Hashing Program (Coming Soon)_
 
 Finishing Project for this course will be a fully functional hashing program. It uses open adressing double hash, and takes key in the form of a string typed id.
 
