@@ -98,8 +98,6 @@ Inspired by the principles of Test-Driven Development.
 
 [![Twitter][twitter-shield]][twitter-url]
 
-<br />
-
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 [linkedin-shield]: https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white
