@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 struct flighttable {
     int index;
     char source[25];
@@ -11,14 +12,17 @@ struct flighttable {
     int minute;
     int price;
 };
-struct adjacency_matrix_struct { //[i][j] are gonna be city matrix indexes
+
+struct adjacency_matrix_struct {
     int adjacency;
     int hour;
     int minute;
     int price;
 };
+
 void printflights(struct flighttable table[], int size);
 void printadjmat(int city_count, struct adjacency_matrix_struct **table);
+
 int main() {
     int i, j, k;
     int c1, c2;
@@ -26,8 +30,6 @@ int main() {
     char user_source[25];
     char user_destination[25];
     int max_transfer; // 0<transfer<city
-    int max_duration;
-    int max_price;
     char selection_forextrainfo;
     char selection_tocontinue;
     char selection_duration;
@@ -91,7 +93,7 @@ int main() {
         if (i >= city_count) {
             city_count++;
             city_matrix[i] = (char *)malloc(25 * sizeof(char));
-            *city_matrix = realloc(*city_matrix, city_count * sizeof(char *));
+            city_matrix = realloc(city_matrix, city_count * sizeof(char *));
             sprintf(city_matrix[i], flights[j].source);
             flights[j].source_index = i;
         }
@@ -107,7 +109,7 @@ int main() {
         if (i >= city_count) {
             city_count++;
             city_matrix[i] = (char *)malloc(25 * sizeof(char));
-            *city_matrix = realloc(*city_matrix, city_count * sizeof(char *));
+            city_matrix = realloc(city_matrix, city_count * sizeof(char *));
             sprintf(city_matrix[i], flights[j].destination);
             flights[j].destination_index = i;
         }
@@ -157,9 +159,9 @@ int main() {
         printf("\nPlease select your flight preferences.");
         // a loop for user to make new selections here
         printf("\nWhere would you like to lift off from?\t");
-        scanf("%s", &user_source);
+        scanf("%s", user_source);
         printf("\nWhere would you like to land?\t");
-        scanf("%s", &user_destination);
+        scanf("%s", user_destination);
         printf("\nMaximum transfers you would like to allow:\t");
         scanf("%d", &max_transfer);
         while (max_transfer > city_count) {
@@ -167,21 +169,17 @@ int main() {
             scanf("%d", &max_transfer);
         }
         printf("\nWould you like to set additional constraints? y/n\t");
-        scanf("%c", &selection_forextrainfo);
-        scanf("%c", &selection_forextrainfo);
+        scanf(" %c", &selection_forextrainfo);
         while ((selection_forextrainfo != 'y') && (selection_forextrainfo != 'n')) {
             printf("\nThat is not allowed. Please select one of the two y/n:\t");
-            scanf("%c", &selection_forextrainfo);
-            scanf("%c", &selection_forextrainfo);
+            scanf(" %c", &selection_forextrainfo);
         }
         if (selection_forextrainfo == 'y') {
             printf("\nAdd a duration constraint? y/n\t");
-            scanf("%c", &selection_duration);
-            scanf("%c", &selection_duration);
+            scanf(" %c", &selection_duration);
             while ((selection_duration != 'y') && (selection_duration != 'n')) {
                 printf("\nThat is not allowed. Please select one of the two y/n:\t");
-                scanf("%c", &selection_duration);
-                scanf("%c", &selection_duration);
+                scanf(" %c", &selection_duration);
             }
             if (selection_duration == 'y') {
                 printf("How many hours?");
@@ -191,12 +189,10 @@ int main() {
             }
 
             printf("\nAdd a price constraint? y/n\t");
-            scanf("%c", &selection_price);
-            scanf("%c", &selection_price);
+            scanf(" %c", &selection_price);
             while ((selection_price != 'y') && (selection_price != 'n')) {
                 printf("\nThat is not allowed. Please select one of the two y/n:\t");
-                scanf("%c", &selection_price);
-                scanf("%c", &selection_price);
+                scanf(" %c", &selection_price);
             }
             if (selection_price == 'y') {
                 printf("Maximum price?");
@@ -205,12 +201,10 @@ int main() {
         }
 
         printf("\nProgram ended. Would you like to make new choices? y/n\t");
-        scanf("%c", &selection_tocontinue);
-        scanf("%c", &selection_tocontinue);
+        scanf(" %c", &selection_tocontinue);
         while ((selection_tocontinue != 'y') && (selection_tocontinue != 'n')) {
             printf("\nThat is not allowed. Please select one of the two y/n:\t");
-            scanf("%c", &selection_tocontinue);
-            scanf("%c", &selection_tocontinue);
+            scanf(" %c", &selection_tocontinue);
         }
     }
 
