@@ -47,7 +47,7 @@ Basically, for the j. ad:
 
 Once j reaches the final step, we will have the maximum revenue we need.
 
-## _Flight Graph Problem (Half solved)_
+## _Flight Graph Problem (Completed)_
 
 A company that sells plane tickets wants to develop an efficient algorithm to show their meers available paths between the cities they wish to fly between. This company gives available flights information, in the shape of a txt file that contains source city, destination city, duration as hour, duraiton as minute, and price of the flight, in that order.
 meers that wish to see flights available mmet:
@@ -81,30 +81,6 @@ Finishing Project for this course will be a fully functional hashing program. It
 
 ---
 
-# Contributing
-
-Contributions are welcome! If you'd like to contribute to this project, please follow the Contributing Guidelines.
-
 # License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-# Acknowledgments
-
-Thanks to the open-source community for their valuable contributions.
-Inspired by the principles of Test-Driven Development.
-
-# Contact
-
-[![Twitter][twitter-shield]][twitter-url]
-
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-[linkedin-shield]: https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white
-[linkedin-url]: https://www.linkedin.com/in/ya%C4%9Fmur-duran-645510182/
-[twitter-shield]: https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white
-[twitter-url]: https://www.linkedin.com/in/ya%C4%9Fmur-duran-645510182/
-
-# Support
-
-If you have any questions or issues, please feel free to contact me.
+This project is licensed under the Apache License - see the LICENSE file for details.
